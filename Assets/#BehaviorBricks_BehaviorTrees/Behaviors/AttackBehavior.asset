@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34a7c8ca992f915438a96c2077353778, type: 3}
+  m_Name: AttackBehavior
+  m_EditorClassIdentifier: 
+  brickName: Assets/#BehaviorBricks_BehaviorTrees/Behaviors/AttackBehavior.asset
+  xml: "\uFEFF<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<BehaviorBricks xmlns:ref=\"urn:padaone\"
+    version=\"1.0\">\r\n  <BehaviorTree id=\"0\" />\r\n  <runtimeInfo>\r\n    <BehaviorTree
+    id=\"0\" guid=\"f79851c66faffae48a35d07360119a78\" nextId=\"33\">\r\n      <root>\r\n       
+    <SequenceNode id=\"28\" />\r\n      </root>\r\n      <inputParams>\r\n       
+    <inputValues>\r\n          <entry name=\"shootPoint\" type=\"UnityEngine.Transform\"
+    isBlackboard=\"False\" />\r\n          <entry name=\"bullet\" type=\"UnityEngine.GameObject\"
+    isBlackboard=\"False\" />\r\n          <entry name=\"bulletVelocity\" type=\"System.Single\"
+    isBlackboard=\"False\" value=\"0\" />\r\n        </inputValues>\r\n      </inputParams>\r\n     
+    <outputParams />\r\n      <localParams />\r\n    </BehaviorTree>\r\n    <SequenceNode
+    id=\"28\">\r\n      <children>\r\n        <elem>\r\n          <ActionNode id=\"26\"
+    />\r\n        </elem>\r\n        <elem>\r\n          <ActionNode id=\"10\" />\r\n       
+    </elem>\r\n      </children>\r\n      <inputParams />\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </SequenceNode>\r\n    <ActionNode id=\"26\"
+    action=\"Basic/WaitForSeconds\">\r\n      <inputParams>\r\n        <inputValues>\r\n         
+    <entry name=\"seconds\" type=\"System.Single\" isBlackboard=\"False\" value=\"0.3\"
+    />\r\n        </inputValues>\r\n      </inputParams>\r\n      <outputParams />\r\n     
+    <localParams />\r\n    </ActionNode>\r\n    <ActionNode id=\"10\" action=\"ThirdParts/ShootOnce\">\r\n     
+    <inputParams>\r\n        <inputValues>\r\n          <entry name=\"shootPoint\"
+    type=\"UnityEngine.Transform\" isBlackboard=\"True\" blackboard=\"shootPoint\"
+    />\r\n          <entry name=\"bullet\" type=\"UnityEngine.GameObject\" isBlackboard=\"True\"
+    blackboard=\"bullet\" />\r\n          <entry name=\"velocity\" type=\"System.Single\"
+    isBlackboard=\"True\" blackboard=\"bulletVelocity\" />\r\n          <entry name=\"tank\"
+    type=\"TankData\" isBlackboard=\"False\" />\r\n        </inputValues>\r\n     
+    </inputParams>\r\n      <outputParams />\r\n      <localParams />\r\n    </ActionNode>\r\n 
+    </runtimeInfo>\r\n  <editorInfo>\r\n    <BehaviorTree id=\"0\" _name=\"AttackBehavior\"
+    _description=\"\" _removeIfClosed=\"False\">\r\n      <_rootList>\r\n       
+    <elem>\r\n          <ActionNode id=\"10\" />\r\n        </elem>\r\n        <elem>\r\n         
+    <ActionNode id=\"26\" />\r\n        </elem>\r\n        <elem>\r\n          <SequenceNode
+    id=\"28\" />\r\n        </elem>\r\n      </_rootList>\r\n      <_nodes>\r\n       
+    <nodes>\r\n          <ActionNode id=\"10\" />\r\n          <SequenceNode id=\"28\"
+    />\r\n          <ActionNode id=\"26\" />\r\n        </nodes>\r\n      </_nodes>\r\n   
+    </BehaviorTree>\r\n    <SequenceNode id=\"28\">\r\n      <_data>\r\n        <data
+    breakpoint=\"0\" selected=\"False\" position=\"271.25 275\" name=\"Sequence\"
+    description=\"Executes all its children in sequence until all of them are successful\"
+    cardinality=\"-1\" hasParent=\"False\">\r\n          <BehaviorTree id=\"28\"
+    />\r\n        </data>\r\n      </_data>\r\n    </SequenceNode>\r\n    <ActionNode
+    id=\"26\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"132.5 463.75\" name=\"Basic/WaitForSeconds\" description=\"Action
+    that success after a period of time.\" cardinality=\"0\" hasParent=\"True\">\r\n         
+    <BehaviorTree id=\"28\" />\r\n          <SequenceNode id=\"28\" />\r\n         
+    <SequenceNode id=\"28\" />\r\n        </data>\r\n      </_data>\r\n    </ActionNode>\r\n   
+    <ActionNode id=\"10\">\r\n      <_data>\r\n        <data breakpoint=\"0\" selected=\"False\"
+    position=\"377.795 465.8331\" name=\"ThirdParts/ShootOnce\" description=\"Clone
+    a 'bullet' and shoots it throught the Forward axis with the specified velocity.\"
+    cardinality=\"0\" hasParent=\"True\">\r\n          <BehaviorTree id=\"28\" />\r\n         
+    <SequenceNode id=\"28\" />\r\n          <SequenceNode id=\"28\" />\r\n       
+    </data>\r\n      </_data>\r\n    </ActionNode>\r\n  </editorInfo>\r\n  <runtimeInfo>\r\n   
+    <BehaviorTree id=\"28\" nextId=\"1\">\r\n      <inputParams />\r\n      <outputParams
+    />\r\n      <localParams />\r\n    </BehaviorTree>\r\n  </runtimeInfo>\r\n  <editorInfo>\r\n   
+    <BehaviorTree id=\"28\" _removeIfClosed=\"False\">\r\n      <_rootList />\r\n     
+    <_nodes>\r\n        <nodes />\r\n      </_nodes>\r\n    </BehaviorTree>\r\n 
+    </editorInfo>\r\n</BehaviorBricks>"
+  zoom: 0.8
+  subslist: []
+  _guid: f79851c66faffae48a35d07360119a78
